@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kotlin-Mvvm-Retrofit-Koin</string>
+
+
+    <string name="main_title_popular_movie">Popular Movies</string>
+    <string name="main_title_upcoming_movie">Upcoming Movies</string>
+</resources>
