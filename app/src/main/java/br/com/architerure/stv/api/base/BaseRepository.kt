@@ -10,8 +10,7 @@ import io.reactivex.observers.DisposableObserver
 import io.reactivex.schedulers.Schedulers
 
 open class BaseRepository(
-    @PublishedApi internal val service: ApiMovieService) :
-    Unsubscribe {
+    internal val service: ApiMovieService) : Unsubscribe {
 
     protected val  compositeDisposable = CompositeDisposable()
 
