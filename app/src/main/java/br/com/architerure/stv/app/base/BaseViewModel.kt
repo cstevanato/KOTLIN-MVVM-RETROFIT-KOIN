@@ -16,9 +16,7 @@ open class BaseViewModel<T : Unsubscribe>(private val clientRepository: T) : Vie
 
     protected fun processError(error: Throwable) {
         val er = ArrayList<String>(1)
-        error.message?.let {
-            er.add(it)
-        } ?: run { er.add("Erro não identificado.") }
+        er.add( error.message?: "Erro não identificado.")
         errors.value = Errors(er)
     }
 

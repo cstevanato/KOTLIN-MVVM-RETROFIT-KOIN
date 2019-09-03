@@ -2,6 +2,7 @@ package br.com.architerure.stv.app.ui.main
 
 import android.content.res.Configuration
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -31,11 +32,6 @@ class MainActivity : AppCompatActivity() {
                 "MoviesObject" to movie
             )
         }
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        moviesViewModel
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -131,13 +127,11 @@ class MainActivity : AppCompatActivity() {
 
     fun showProgress() {
         isLoading = true
-//        recycle_view_movie.visibility = View.INVISIBLE
         frame_progress.visibility = View.VISIBLE
     }
 
     fun hideProgress() {
         isLoading = false
-//        recycle_view_movie.visibility = View.VISIBLE
         frame_progress.visibility = View.GONE
     }
     //endregion

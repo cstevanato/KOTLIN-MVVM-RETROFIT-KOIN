@@ -22,4 +22,5 @@ Projeto de teste de utilização: MVVM, Retrofit, Koin, RxJava
 [3]: http://reactivex.io/
 [4]: https://www.themoviedb.org/
 [6]: https://developer.android.com/topic/libraries/architecture/index.html
+[8]: https://developer.android.com/topic/libraries/architecture/livedata.html
 [9]: https://developer.android.com/topic/libraries/architecture/viewmodel.html
