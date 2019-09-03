@@ -12,7 +12,7 @@ import org.koin.dsl.module
 
 val appModule: Module = module {
     single { ApiMovieService(BuildConfig.SERVER_URL) }
-    single { MoviesRepository(get()) }
+    single { MoviesRepository(get(), CompositeDisposable()) }
 
     viewModel {
         MoviesViewModel(get())

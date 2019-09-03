@@ -6,8 +6,10 @@ import br.com.architerure.stv.api.domains.CastResponse
 import br.com.architerure.stv.api.domains.GenreResponse
 import br.com.architerure.stv.api.domains.MoviesResponse
 import br.com.architerure.stv.api.service.ApiMovieService
+import io.reactivex.disposables.CompositeDisposable
 
-class MoviesRepository(service: ApiMovieService) : BaseRepository(service), Unsubscribe {
+class MoviesRepository(service: ApiMovieService, compositeDisposable: CompositeDisposable)
+    : BaseRepository(service, compositeDisposable) {
 
     fun loadPopularMovies(
         page: String, language: String,

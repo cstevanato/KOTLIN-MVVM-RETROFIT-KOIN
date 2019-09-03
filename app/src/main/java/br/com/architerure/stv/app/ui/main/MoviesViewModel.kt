@@ -7,8 +7,10 @@ import br.com.architerure.stv.api.domains.MoviesResponse
 import br.com.architerure.stv.api.repository.MoviesRepository
 import br.com.architerure.stv.app.base.BaseViewModel
 import br.com.architerure.stv.app.ui.main.domains.MoviesTotalsPage
+import io.reactivex.disposables.CompositeDisposable
 
-class MoviesViewModel(private val moviesRepository: MoviesRepository) :
+class MoviesViewModel(
+    private val moviesRepository: MoviesRepository) :
     BaseViewModel<MoviesRepository>(moviesRepository) {
 
     private var page: Int = 1
